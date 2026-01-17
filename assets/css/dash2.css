@@ -1,0 +1,191 @@
+        body {
+            margin: 0;
+            min-height: 100vh;
+            /* Fondo con degradado lineal */
+            background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 50%, #80cbc4 100%);
+            background-attachment: fixed;
+            /* Mantiene el fondo quieto al hacer scroll */
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        nav {
+            background: #4c699c;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .card {
+            background: #2ecc71(113, 230, 144);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .balance {
+            font-size: 2.5rem;
+            color: #2ecc71;
+            font-weight: bold;
+        }
+        .actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        input,
+        button,
+        select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 5px;
+        }
+
+        button {
+            background: #2575fc;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button.red {
+            background: #e74c3c;
+        }
+
+        .movements {
+            font-size: 0.9rem;
+        }
+
+        .item {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .neg {
+            color: #e74c3c;
+        }
+
+        .pos {
+            color: #2ecc71;
+        }
+
+
+        /* Estilo para el contenedor del saldo */
+        .balance-card {
+            background: rgba(255, 255, 255, 0.9) !important;
+            backdrop-filter: blur(10px);
+            /* Efecto de vidrio esmerilado */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: #e0f2f1;
+            /* Verde agua muy claro (fondo) */
+            border-radius: 12px;
+            padding: 15px;
+            border-left: 5px solid #26a69a;
+            /* Barra lateral verde agua intenso */
+            display: inline-block;
+            /* Se ajusta al contenido */
+            min-width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Estilo para el texto "Saldo Disponible" */
+        .balance-label {
+            color: #00796b;
+            /* Verde agua oscuro para legibilidad */
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Estilo para el monto ($0.00) */
+        .balance-amount {
+            color: #004d40;
+            /* Verde petróleo/agua muy oscuro */
+            font-size: 1.8rem;
+            font-weight: 800;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /*tarjeta en pantalla*/
+
+        .card-visa {
+            width: 100%;
+            max-width: 400px;
+            height: 250px;
+            margin: 20px auto;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1d2b64 0%, #f8cdda 100%);
+            /* Color base elegante */
+            border-radius: 15px;
+            padding: 25px;
+            color: white;
+            position: relative;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .chip {
+            width: 50px;
+            height: 40px;
+            background: linear-gradient(135deg, #ffd700 0%, #b8860b 100%);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .logo-banco {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        .card-number {
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .card-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-details label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            display: block;
+            opacity: 0.8;
+        }
+
+        .card-details div {
+            font-size: 1rem;
+            font-weight: 500;
+        }

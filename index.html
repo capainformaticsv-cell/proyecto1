@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet - Login</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="box" id="auth-box">
+        <h2 id="title">Iniciar Sesión</h2>
+
+        <div id="datosusuario" style="display: none;">
+            <input type="text" id="nombre" placeholder="Nombre Completo" required>
+            <input type="text" id="rut" placeholder="Numero Rut" required>
+            <input type="text" id="banco" placeholder="Ingrese Banco" required>
+            <input type="text" id="tcuenta" placeholder="Tipo Cuenta" required>
+            <input type="text" id="ncuenta" placeholder="Numero de cuenta" required>
+
+        </div>
+
+        <input type="text" id="user" placeholder="Usuario (Email o Nombre)" required>
+        <input type="password" id="pass" placeholder="Contraseña" required>
+
+        <button onclick="auth()">Entrar</a></button>
+        <div class="toggle" onclick="toggleMode()" id="toggle-text" style="cursor:pointer; margin-top:10px;">
+            ¿No tienes cuenta? Regístrate
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/script1.js"></script>
+
+</body>
+
+</html>
